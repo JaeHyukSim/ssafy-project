@@ -18,7 +18,7 @@ public class AdminController {
 	@Autowired
 	private AdminService adminService;
 	
-	@GetMapping("/form")
+	@GetMapping("/main")
 	public void adminForm(Model model) {
 		try {
 			List<Member> members = adminService.select();

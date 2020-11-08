@@ -17,7 +17,7 @@
 	
 	<script>
 		$('#go-admin-page').on('click', function() {
-			$(location).attr('href', 'admin/form');
+			$(location).attr('href', 'admin/index');
 		});
 	</script>
 </body>

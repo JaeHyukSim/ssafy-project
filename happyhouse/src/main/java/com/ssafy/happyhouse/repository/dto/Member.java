@@ -1,11 +1,32 @@
 package com.ssafy.happyhouse.repository.dto;
 
+import java.sql.Timestamp;
 
 public class Member {
+	private String id;
+	private String pw;
 	private String email;
-	private String password;
-	private String name;
+	private String gender;
+	private String phone;
+	private Timestamp birthday;
 	private int grade;
+	private Timestamp bandate;
+
+	public String getId() {
+		return id;
+	}
+
+	public void setId(String id) {
+		this.id = id;
+	}
+
+	public String getPw() {
+		return pw;
+	}
+
+	public void setPw(String pw) {
+		this.pw = pw;
+	}
 
 	public String getEmail() {
 		return email;
@@ -15,20 +36,28 @@ public class Member {
 		this.email = email;
 	}
 
-	public String getPassword() {
-		return password;
+	public String getGender() {
+		return gender;
 	}
 
-	public void setPassword(String password) {
-		this.password = password;
+	public void setGender(String gender) {
+		this.gender = gender;
 	}
 
-	public String getName() {
-		return name;
+	public String getPhone() {
+		return phone;
 	}
 
-	public void setName(String name) {
-		this.name = name;
+	public void setPhone(String phone) {
+		this.phone = phone;
+	}
+
+	public Timestamp getBirthday() {
+		return birthday;
+	}
+
+	public void setBirthday(Timestamp birthday) {
+		this.birthday = birthday;
 	}
 
 	public int getGrade() {
@@ -37,6 +66,14 @@ public class Member {
 
 	public void setGrade(int grade) {
 		this.grade = grade;
+	}
+
+	public Timestamp getBandate() {
+		return bandate;
+	}
+
+	public void setBandate(Timestamp bandate) {
+		this.bandate = bandate;
 	}
 
 }
